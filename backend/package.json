@@ -4,7 +4,7 @@
   "type": "module",
   "main": "src/index.js",
   "scripts": {
-    "dev": "nodemon --experiental-module --es-module-specifier-resolution=node src/index.js"
+    "dev": "nodemon -r dotenv/config --experimental-json-modules src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -12,7 +12,8 @@
   "description": "",
   "dependencies": {
     "dotenv": "^16.4.7",
-    "express": "^4.21.2"
+    "express": "^4.21.2",
+    "mongoose": "^8.13.0"
   },
   "devDependencies": {
     "nodemon": "^3.1.9",
